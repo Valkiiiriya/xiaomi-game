@@ -118,6 +118,7 @@ body h2 {
   top: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  background: #eaeaea;
 }
 
 .desktop-menu a {
@@ -125,12 +126,12 @@ body h2 {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   text-align: center;
-  padding: 10px 0;
-  border: 2px solid #fff;
+  padding: 20px;
+  border: 2px solid #eaeaea;
   border-radius: 15px;
-  color: #fff;
+  color: #272529;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   background: transparent;
   transition: 0.7s;
 }
@@ -139,7 +140,7 @@ body h2 {
   color: #fff;
   border-color: #ff6700;
   background-color: #ff6700;
-  box-shadow: 0 0 18px rgba(255, 103, 0, 0.6);
+  transition: 0.7s;
 }
 
 @media (max-width: 768px) {
@@ -445,7 +446,6 @@ body h2 {
     width: 30px;
   }
 }
-
 
 .coupon_info {
   font-family: "Montserrat", sans-serif;
@@ -999,9 +999,10 @@ body h2 {
     padding: 10px 12px;
   }
 
-  .car-name img{
+  .car-name img {
     height: 24px;
   }
+}
 
 @media screen and (max-width: 974px) and (min-width: 680px) {
   body h2 {
@@ -1159,7 +1160,6 @@ body h2 {
   .img_background_6 {
     background: none;
   }
-
 }
 
 @media screen and (max-width: 450px) and (min-width: 390px) {
