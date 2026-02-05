@@ -292,6 +292,13 @@ body h2 {
   align-items: center;
 }
 
+/* Обёртка галереи призов*/
+.prize-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 /*Галерея призов*/
 .prize-gallery {
   display: grid;
@@ -303,25 +310,70 @@ body h2 {
   max-width: 1300px;
 }
 
-.prize-gallery img {
-  max-width: 100%;
+.prize-item {
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.prize-img {
+  width: 100px;
   height: auto;
   display: block;
+  margin: 0 auto 14px;
   transition:
     transform 0.35s ease,
     filter 0.35s ease;
   will-change: transform;
 }
 
-.prize-gallery img:hover {
+/*.prize-gallery img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+  will-change: transform;
+}*/
+
+.prize-item:hover .prize-img {
   transform: scale(1.2);
   transition: 1.5s;
 }
 
-.prize-wrapper {
+.prize-badge {
+  position: absolute;
+  top: -6px;
+  right: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ff6700;
+  color: #fff;
   display: flex;
+  align-items: center;
   justify-content: center;
-  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  z-index: 2;
+}
+
+.prize-title {
+  font-weight: 800;
+  font-size: 16px;
+  color: #ff6700;
+  margin-bottom: 6px;
+}
+
+.prize-subtitle {
+  font-weight: 500;
+  font-size: 15px;
+  color: #272529;
+  line-height: 1.25;
 }
 
 /*Правила розыгрыша*/
@@ -938,6 +990,21 @@ body h2 {
   .prize-gallery {
     grid-template-columns: repeat(auto-fill, 140px);
     gap: 15px;
+  }
+
+  .prize-item {
+    max-width: 190px;
+  }
+
+  .prize-img {
+    width: 95px;
+  }
+
+  .prize-badge {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
   }
 
   .mob {
