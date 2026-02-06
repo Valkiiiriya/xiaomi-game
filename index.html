@@ -653,24 +653,6 @@
         document.getElementById('burger-toggle').checked = false;
       })
     );
-
-    // Скролл к якорю при скрытии карточек
-    document.querySelectorAll('.show-more-label').forEach(label => {
-      label.addEventListener('click', function () {
-        const forAttr = this.getAttribute('for'); // например: toggle-vacuum
-        const checkbox = document.getElementById(forAttr);
-        const anchorId = forAttr.replace('toggle-', ''); // vacuum
-        const anchor = document.getElementById(anchorId);
-
-        // Проверяем: был открыт → закрываем → прокручиваем к якорю
-        if (checkbox.checked && anchor) {
-          // Задержка нужна, чтобы страница "успела" скрыть карточки
-          setTimeout(() => {
-            anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }, 300);
-        }
-      });
-    });
   </script>
 
 
