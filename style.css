@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  /*background: url("https://mi.by/upload/iblock/dde/j9027q6prsei97ckevmxyng2vz5la2li.png");
-  background-size: 100% auto;
-  background-position-y: bottom;
-  background-repeat: no-repeat;*/
   background-color: #eaeaea;
   scroll-behavior: smooth;
 }
@@ -17,6 +13,10 @@ header,
 .b24-widget-button-position-bottom-right,
 .b24-widget-button-visible {
   display: none;
+}
+
+.main-content {
+  padding-top: 0 !important;
 }
 
 body h2 {
@@ -1126,7 +1126,8 @@ body h2 {
 /*Мобильная адаптация элементов*/
 @media screen and (min-width: 1300px) {
   .container {
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .cards {
