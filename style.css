@@ -109,7 +109,7 @@ body h2 {
 
 /* Sticky шапка */
 .sticky_top {
-  *position: -webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
